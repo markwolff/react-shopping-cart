@@ -30,7 +30,8 @@ const Product = ({ product, addProduct }) => {
   return (
     <div
       className="shelf-item"
-      onClick={() => addProduct(product)}
+      onClick={addProduct}
+      // onClick={() => addProduct(product)}
       data-sku={product.sku}
     >
       {product.isFreeShipping && (

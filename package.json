@@ -19,7 +19,7 @@
   },
   "scripts": {
     "start": "npm run server",
-    "dev": "concurrently \"npm run server\" \"react-scripts start\"",
+    "dev": "concurrently \"nodemon server/app.js\" \"react-scripts start\"",
     "server": "node server/app.js",
     "wdio": "wdio",
     "build": "react-scripts build",
