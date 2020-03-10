@@ -30,8 +30,12 @@ const Product = ({ product, addProduct }) => {
   return (
     <div
       className="shelf-item"
-      onClick={addProduct}
-      // onClick={() => addProduct(product)}
+      onClick={() => {
+        // Simulate dependency on array being non-empty
+        if (product.availableSizes[0][0]) { // will crash on empty array
+          addProduct(product)
+        }
+      }}
       data-sku={product.sku}
     >
       {product.isFreeShipping && (
