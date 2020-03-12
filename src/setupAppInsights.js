@@ -5,7 +5,8 @@ const appInsights = new ApplicationInsights({
     instrumentationKey: '5be53845-3339-45c5-824a-2c2f9474c0be',
     enableCorsCorrelation: true,
     enableAutoRouteTracking: true,
-    disableFetchTracking: false
+    disableFetchTracking: false,
+    correlationHeaderExcludedDomains: ["api.github.com"]
   }
 });
 appInsights.loadAppInsights();
