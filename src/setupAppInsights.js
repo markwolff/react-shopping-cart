@@ -2,7 +2,7 @@ import { ApplicationInsights } from '@microsoft/applicationinsights-web';
 
 const appInsights = new ApplicationInsights({
   config: {
-    instrumentationKey: '5be53845-3339-45c5-824a-2c2f9474c0be',
+    instrumentationKey: '25498541-2456-471a-bd73-c915ad18e7ef',
     enableCorsCorrelation: true,
     enableAutoRouteTracking: true,
     disableFetchTracking: false,
